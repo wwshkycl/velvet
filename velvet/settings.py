@@ -46,6 +46,7 @@ INSTALLED_APPS = [
 
     'main',
     "cart",
+    'users',
 
 ]
 
@@ -148,3 +149,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 SESSION_COOKIE_HTTPONLY = 86400 # 30 дней
 SESSION_SAVE_EVERY_REQUEST = True
+
+
+AUTH_USER_MODEL = 'users.CustomUser'
